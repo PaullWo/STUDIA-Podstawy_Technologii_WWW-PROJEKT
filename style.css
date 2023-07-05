@@ -1,0 +1,188 @@
+/*Reguły ogólne*/
+html, body {
+    height: 100%;
+    margin: 0%;
+    width: 100%;
+    cursor: url("grafika/kursor.png"), auto;
+}
+/*------------------------------------------------*/
+        /*dodawane przy Stronie z logowaniem*/
+
+/*Ogolny podział strony*/
+.tlo {
+    background: content-box radial-gradient(#6af851, #14300f);
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.okno {
+    height: 95%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("grafika/tlo_okno.png");
+    background-position: center;
+    background-size: 100%;
+    margin: 0px;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+    /*Lewa strona strony*/
+
+.test_lewy {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+/*Bury kot*/
+.okno_lewy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 50%;
+}
+#okno_lewykot {  /*zdjecie*/
+    width: 500px;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+.okno_img {
+    width: 50%;
+    display: flex;
+}
+
+/*Logo*/
+.okno_gora {
+    height: 50%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: flex-end;
+}
+#okno_logo {  /*zdjecie*/
+    width: 800px;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+/*Logowanie i komunikat*/
+#powitanie {
+    font-size: 17px;
+    color: black;
+    padding: 5px 20px;
+    filter: drop-shadow(15px 15px 8px rgb(255, 255, 255));
+    margin: 0px;
+    line-height: 25px;
+}
+.okno_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    background: linear-gradient(rgba(211, 211, 211, 0.89), rgba(190, 190, 190, 0.904));
+    padding: 15px 0px;
+    border: 4px black solid;
+    border-radius: 15px;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+    font-family: Impact;
+    text-align: center;
+}
+
+/*Formularz logowania*/
+#form_logowanie {
+    text-align: center;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+}
+#form_logowanie input {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px black solid;
+    font-family: Trebuchet MS;
+    color: #4b4b4b;
+    background-color: rgb(228, 226, 226);
+}
+#login_haslo {
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    margin-top: 0px;
+}
+#logowanie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#rejestrowanie {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+}
+#rejestrowanie p {
+    margin: 10px;
+}
+.wyrozniony_tekst {
+    font-weight: lighter;
+    color: #ca0a0a;
+}
+
+/*Przyciski i kotwice ala przyciski*/
+button, .button {
+    text-decoration: none;
+    font-family: Impact;
+    font-size: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    background-color: rgba(53, 139, 27, 0.932);
+    padding: 7px 20px;
+    color: black;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #000000;
+}
+button:active, .button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+.button {
+    font-weight: lighter;
+}
+
+    /*Prawa strona strony/
+
+/*Rudy kot*/
+.okno_prawy {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    margin: 0px;
+    height: 95%;
+}
+#okno_prawykot {  /*zdjecie*/
+    height: 650px;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+/*------------------------------------------------*/

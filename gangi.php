@@ -44,11 +44,37 @@
             </nav>
             <article>
                 <div class="nad_article" id="nad_article_gangi">
-                    <div class="article_post">
-                        
+                    <div class="article_post lista_gang" id="gang_dachowce">
+                        <h4>MIEJSKIE DACHOWCE</h4>
+                        <div class="scroll_gangi">
+                            <?php
+                                $sql="SELECT * FROM uzytkownicy WHERE gang='dachowce'";
+                                $result = $conn->query($sql);
+                                while($row=$result->fetch_object()){
+                                    $wyglad=$row->wyglad;
+                                    $login=$row->login;
+                                    $coins=$row->coins;
+                                    echo "<div class='uzytkownik'><img src='obrazy/glowy/dachowce/$wyglad' class='profil_img'><div>login: $login <br>stan konta:$coins <img src='grafika/coin.png'class='coins'></div></div>";
+                                }
+                            ?>
+                        </div>
+                        <img src="grafika/dachowce.png" style="height:200px">
                     </div>
-                    <div class="article_post">
-                        
+                    <div class="article_post lista_gang" id="gang_mafia">
+                        <h4>RASOWA MAFIA</h4>
+                        <div class="scroll_gangi">
+                            <?php
+                                $sql="SELECT * FROM uzytkownicy WHERE gang='mafia'";
+                                $result = $conn->query($sql);
+                                while($row=$result->fetch_object()){
+                                    $wyglad=$row->wyglad;
+                                    $login=$row->login;
+                                    $coins=$row->coins;
+                                    echo "<div class='uzytkownik'><img src='obrazy/glowy/mafia/$wyglad' class='profil_img'><div>login: $login<br>stan konta: $coins <img src='grafika/coin.png' class='coins'></div></div>";
+                                }
+                            ?>
+                        </div>
+                        <img src="grafika/mafia.png" style="height:200px">
                     </div>
                 </div>
                 

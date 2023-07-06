@@ -465,3 +465,48 @@ article{
 .nad_article p, h4{
     margin: 15px;
 }
+
+/*------------------------------------------------*/
+    /*dodawane przy Stronie z gangami*/
+#nad_article_gangi{
+    flex-direction: row;
+}
+#nad_article_gangi > div{
+    width: 450px;
+    height: 650px;
+}
+.lista_gang{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.lista_gang h4{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.lista_gang img{
+    filter: drop-shadow(1px 2px 2px rgb(0, 0, 0));
+}
+.scroll_gangi{
+    overflow: auto;
+    width: 420px;
+}
+.scroll_gangi .profil_img{
+    height: 100px;
+}
+.scroll_gangi .coins{
+    height: 20px;
+}
+.uzytkownik{
+    display: flex;
+    border: #000000 3px solid;
+    filter: drop-shadow(0px 2px 3px rgb(0, 0, 0));
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(rgba(136, 17, 17, 0.856),rgba(88, 12, 12, 0.863));
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.822);
+}

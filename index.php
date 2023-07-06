@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="grafika/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="grafika/favicon.png" type="image/x-icon">
     <title>CATS GANG</title>
 </head>
 
@@ -26,16 +26,19 @@
                         <p id="powitanie">      <!--komunikat początkowy-->
                             Witaj w świecie,w którym nad ludźmi panują koty.<br>
                             Wybierz drużynę <b class="wyrozniony_tekst">Miejskich Dachowców</b> lub wciel się <br>w 
-                            <b class="wyrozniony_tekst">Rasową Mafię</b>i razem ze swoim gangiem<br> zacznij podbijać świat!
+                            <b class="wyrozniony_tekst">Rasową Mafię</b> i razem ze swoim gangiem<br> zacznij podbijać świat!
                         </p>
                         <div id="logowanie">
-                            <form id="form_logowanie">
+                            <form id="form_logowanie" action="index.php" method="POST">
                                 <p>LOGOWANIE</p>
                                 <p id="login_haslo">
-                                    login: <input type="text" name="" id="" value="login"><br>
-                                    hasło: <input type="password" name="" id="" value="hasło"><br>
+                                    login: <input type="text" name="logowanie_login" id="" value="login"><br>
+                                    hasło: <input type="password" name="logowanie_haslo" id="" value="hasło"><br>
+
                                 </p>
                                 <button type="submit">Zaloguj się</button>
+                                <p id="komunikat2" class="wyrozniony_tekst">
+                                    </p>
                             </form>
                             <div id="rejestrowanie">
                                 <p>Nie masz jeszcze konta?</p>
@@ -50,6 +53,31 @@
             </div>
         </div>
     </div>
+    <?php
+        $conn = new mysqli("localhost", "root", "", "cats_gang");
+        if ($conn->connect_error) {
+            exit("Connection failed: " . $conn->connect_error);
+        }
+        session_start();
+        if (isset($_POST["logowanie_login"])) {
+            $login = $_POST["logowanie_login"];
+            $haslo = $_POST["logowanie_haslo"];
+            $sql1 = "SELECT * FROM uzytkownicy WHERE login='$login' AND haslo='".md5($haslo)."'";
+            $result1 = $conn->query($sql1);
+            if($result1->num_rows==1){
+                $_SESSION["login"]=$login;
+                $_SESSION["gang"]=$gang;
+                header("Location: aktualnosci.php");
+            }else{
+                ?>
+                <script>
+                    document.getElementById("komunikat2").innerHTML="Błędne dane!";
+                </script>
+                <?php
+            }
+        }
+        $conn->close();
+    ?>
 </body>
 
 </html>

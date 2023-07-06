@@ -18,9 +18,9 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-.okno {
-    height: 95%;
-    width: 85%;
+.okno,.okno_glowne {
+    height: 894px;
+    width: 1597px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,13 +59,13 @@ html, body {
 
 /*Logo*/
 .okno_gora {
-    height: 50%;
+    height: 46%;
     display: flex;
     padding-top: 20px;
     justify-content: flex-end;
 }
 #okno_logo {  /*zdjecie*/
-    width: 800px;
+    width: 790px;
     filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
 }
 
@@ -83,9 +83,10 @@ html, body {
     flex-direction: column;
     align-items: center;
     width: 40%;
+    height: 95%;
     margin-right: 50px;
     margin-bottom: 25px;
-    margin-top: 10px;
+    margin-top: 13px;
     font-size: 20px;
     color: black;
     background: linear-gradient(rgba(211, 211, 211, 0.89), rgba(190, 190, 190, 0.904));
@@ -163,7 +164,7 @@ button, .button {
 }
 button:active, .button:active {
     transform: translateY(5px);
-    box-shadow: 0px 0px 0px 0px #a29bfe;
+    box-shadow: 0px 0px 0px 0px #000000;
 }
 .button {
     font-weight: lighter;
@@ -190,7 +191,7 @@ button:active, .button:active {
 
 #rejestracja_logo{
     height: 200px;
-    filter: drop-shadow(7px 7px 10px rgb(0, 0, 0));
+    filter: drop-shadow(7px 7px 20px rgb(0, 0, 0));
 }
 #okno_rejestracja{
     width: 60%;
@@ -209,7 +210,7 @@ button:active, .button:active {
     color: #ca0a0a;
     font-size: 16px;
 }
-#formularz_rejestracja{
+#formularz_rejestracja,#formularz_wybor{
     font-family: Trebuchet MS;
     font-weight: bold;
     font-size: 15px;
@@ -217,7 +218,7 @@ button:active, .button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px black solid;
+    border: 3px black solid;
     padding: 10px 0px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.932);
@@ -245,7 +246,7 @@ button:active, .button:active {
     margin: 8px;
     margin-top: 12px;
     width: 700px;
-    text-align: center;
+    text-align: center;   
 }
 #info_gangi{
     font-family: Impact;
@@ -261,10 +262,206 @@ button:active, .button:active {
     margin-top: 10px;
     text-align: left;
 }
-#formularz_rejestracja > :first-child  {
+#formularz_rejestracja > :first-child  ,#form_postac > :first-child{
     font-family: Impact;
     font-weight: lighter;
     font-size: 22px;
     margin: 0px;
     color: rgba(0, 0, 0, 0.932);
+}
+
+/*Obsluga logowania,rejestracji*/
+#komunikat{
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+#komunikat2{
+    font-family: Trebuchet MS;
+    font-size: 14px;
+    margin: 10px;
+    padding: 0px;
+}
+
+/*Wybor postaci*/
+.postacie_img{
+    height: 180px;
+}
+#form_postac{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formularz_wybor{
+    width: 595px;
+    height: 515px;
+}
+#wybor_postaci{
+    display: flex;
+}
+#wybor_postaci p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.okno_wybor > :first-child{
+    margin-bottom:10px;
+}
+
+/*------------------------------------------------*/
+    /*dodawane przy Stronie z aktualnosciami*/
+.okno_glowne{
+    background-image: url("grafika/tlo_glowne.png");
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+/*Pasek menu*/
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 13%;
+    width: 98.9%;
+    margin-top: 5px;
+    padding-top: 10px;
+    margin-left: 10px;
+    background: black;
+    padding-bottom: 20px;
+}
+nav a{
+    margin-right: 100px;
+}
+.menu > a >img {
+    height: 100px;
+}
+.menu{
+    background: linear-gradient(rgba(104, 104, 104, 0.89), rgba(75, 75, 75, 0.904));
+    background-image: url("grafika/menu_tlo.png");
+    background-size: 50%;
+    width: 92%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 110%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.menu a{
+    font-size: 25px;
+    border: 3px solid rgba(255, 255, 255, 0.705);
+    box-shadow: 0px 7px 0px 0px #ffffffbb;
+    border-radius: 15px;
+    margin: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.932);
+    color:rgba(255, 255, 255, 0.808);
+    width: 130px;
+    text-align: center;
+}
+.menu a:nth-child(3){
+    font-size: 40px;
+    width: 230px;
+    background: linear-gradient(rgba(136, 17, 17, 0.932),rgba(88, 12, 12, 0.932));
+}
+
+/*Kot i coiny*/
+.profil_img{
+    height: 70px;
+    background: linear-gradient(rgba(226, 226, 226, 0.945),rgba(202, 202, 202, 0.952));
+    padding: 9px;
+    padding-bottom: 0px;
+    filter: drop-shadow(3px 2px 5px rgb(0, 0, 0));
+    border: #000000 3px solid;
+    border-radius: 10px;
+}
+.coins{
+    height: 20px;
+}
+.menu_profil{
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110%;
+    background-image: url("grafika/menu_tlo.png");
+    background-size: 400%;
+}
+.menu_profil > :first-child{
+    margin-top: 12px;
+}
+.menu_profil div{
+    background: linear-gradient(rgba(226, 226, 226, 0.945),rgba(202, 202, 202, 0.952));
+    padding: 2px;
+    filter: drop-shadow(3px 2px 5px rgb(0, 0, 0));
+    border: #000000 3px solid;
+    border-radius: 10px;
+    width: 67%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+}
+.menu_profil div p{
+    padding-right: 3px;
+    font-family: Impact;
+    font-weight: lighter;
+}
+
+/*Artkuł(cały dół)*/
+article{
+    height: 82.5%;
+    margin: 0px;
+    background: linear-gradient(rgba(190, 190, 190, 0.89), rgba(179, 179, 179, 0.904));
+    width: 98.8%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.nad_article > div{
+    width: 65%;
+    height: 45%;
+    background-color: rgb(228, 226, 226);
+    border-radius: 20px;
+    border: 3px black solid;
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+    font-family: Impact;
+    font-weight: lighter;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.nad_article h4{
+    font-family: Impact;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.nad_article > div > div{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.article_post{
+    display: flex;
+}
+.article_post img{
+    height: 260px;
+    filter: drop-shadow(1px 2px 2px rgb(0, 0, 0));
+}
+.nad_article{
+    background: linear-gradient(rgba(128, 128, 128, 0.89), rgba(112, 112, 112, 0.904));
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 123px;
+}
+.nad_article p, h4{
+    margin: 15px;
 }

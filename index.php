@@ -65,8 +65,9 @@
             $sql1 = "SELECT * FROM uzytkownicy WHERE login='$login' AND haslo='".md5($haslo)."'";
             $result1 = $conn->query($sql1);
             if($result1->num_rows==1){
+                $row=$result1->fetch_object();
                 $_SESSION["login"]=$login;
-                $_SESSION["gang"]=$gang;
+                $_SESSION["gang"]=$row->gang;
                 header("Location: aktualnosci.php");
             }else{
                 ?>

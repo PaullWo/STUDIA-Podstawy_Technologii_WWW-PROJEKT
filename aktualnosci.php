@@ -12,7 +12,18 @@
 </head>
 
 <body>
-    <?php require("db_session.php"); ?>
+    <?php require("db_session.php"); 
+        if(isset($_REQUEST["wynik"])){
+            $id=$_SESSION['id'];
+            $sql1="SELECT coins FROM uzytkownicy WHERE id=$id";
+            $result1 = $conn->query($sql1);
+            $row=$result1->fetch_object();
+            $coins=$row->coins;
+            $suma=$coins+$_REQUEST["wynik"];
+            $sql2="UPDATE uzytkownicy SET coins = $suma WHERE id = $id";
+            $result2 = $conn->query($sql2);
+        }
+    ?>
     <div class="tlo">
         <div class="okno_glowne">
             <nav>

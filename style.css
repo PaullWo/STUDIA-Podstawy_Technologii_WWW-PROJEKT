@@ -352,7 +352,7 @@ nav a{
 .menu a{
     font-size: 25px;
     border: 3px solid rgba(255, 255, 255, 0.705);
-    box-shadow: 0px 7px 0px 0px #ffffffbb;
+    box-shadow: 0px 7px 0px 0px #ffffffde;
     border-radius: 15px;
     margin: 15px;
     margin-bottom: 20px;
@@ -365,6 +365,7 @@ nav a{
     font-size: 40px;
     width: 230px;
     background: linear-gradient(rgba(136, 17, 17, 0.932),rgba(88, 12, 12, 0.932));
+    color:rgba(255, 255, 255, 0.897);
 }
 
 /*Kot i coiny*/
@@ -510,3 +511,137 @@ article{
     margin: 5px;
     color: rgba(255, 255, 255, 0.822);
 }
+
+/*------------------------------------------------*/
+    /*dodawane przy Stronie z społecznością*/
+.post_tresc{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Trebuchet MS;
+    background-color: #a5a5a5;
+    border-radius: 20px;
+    width: 500px;
+    margin: 20px;
+}
+.post_tresc img{
+    margin-top: 20px;
+    filter: drop-shadow(0px 0px 0px rgb(0, 0, 0));
+    height: 200px;
+}
+.article_post{
+    display: flex;
+    margin: 10px;
+}
+.spolecznosc div{
+    height: auto;
+    margin: 5px;
+}
+.spolecznosc{
+    justify-content: flex-start;
+    overflow: auto;
+}
+.post_profil{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.post_profil >img{
+    height: 100px;
+    margin-right: 50px;
+}
+.post_profil div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.polubienia{
+    height:20px;
+}
+.article_post_mniejszy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 350px;
+    padding-left: 30px;
+}
+.dodaj_post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dodaj_post form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dodaj_post form .button{
+    margin:10px;
+}
+
+/*------------------------------------------------*/
+    /*dodawane przy Stronie z polowaniem*/
+.zakoncz_polowanie{
+    margin-left: 1170px;
+}
+.gra{
+    height: 650px;
+    width: 1200px;
+    background: linear-gradient(rgba(226, 226, 226, 0.945),rgba(202, 202, 202, 0.952));
+    background: url(grafika/moro.png);
+    padding: 9px;
+    padding-bottom: 0px;
+    filter: drop-shadow(3px 2px 5px rgb(0, 0, 0));
+    border: #000000 3px solid;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.bloodSpot {
+    position: absolute;
+    height: 50px;
+  }
+  .terrorist {
+    height: 120px;
+  }
+  img::selection {
+    background: transparent;
+  }
+  .coins_gra{
+    height: 30px;
+    padding:5px;
+  }
+  .nagroda{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .startBtn{
+    font-size: 25px;
+    border: 3px solid rgba(255, 255, 255, 0.705);
+    box-shadow: 0px 7px 0px 0px #ffffffde;
+    border-radius: 15px;
+    margin: 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(rgba(136, 17, 17, 0.932),rgba(88, 12, 12, 0.932));
+    color:rgba(255, 255, 255, 0.897);
+    width: 200px;
+    text-align: center;
+    height: 80px;
+  }

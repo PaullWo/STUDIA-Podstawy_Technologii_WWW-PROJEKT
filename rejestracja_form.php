@@ -79,6 +79,10 @@
                 $result2 = $conn->query($sql2);
                 $_SESSION["login"]=$login;
                 $_SESSION["gang"]=$gang;
+                $sql1 = "SELECT * FROM uzytkownicy WHERE login='$login'";
+                $result1 = $conn->query($sql1);
+                $row=$result1->fetch_object();
+                $_SESSION['id']=$row->id;
                 header("Location: wybor_postaci.php");
                 $conn->close();
             }

@@ -645,3 +645,67 @@ article{
     text-align: center;
     height: 80px;
   }
+
+/*------------------------------------------------*/
+    /*dodawane przy Stronie z profilem*/
+.article_post_profil{
+    font-size: 14px;
+}
+.scroll_profil{
+    overflow: auto;
+    width: 800px;
+    display: flex;
+}
+.scroll_profil .profil_img{
+    height: 80px;
+}
+.scroll_profil .coins{
+    height: 20px;
+}
+.nad_article_profil{
+    display: flex;
+}
+#nad_article_profil > div{
+    height: 80%;
+    width: 50%;
+    padding: 0px;
+}
+#wyloguj{
+    font-size: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.705);
+    box-shadow: 0px 7px 0px 0px #ffffffde;
+    border-radius: 15px;
+    margin: 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(rgba(136, 17, 17, 0.932),rgba(88, 12, 12, 0.932));
+    color:rgba(255, 255, 255, 0.897);
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*------------------------------------------------*/
+    /*dodawane przy Stronie z handlem*/
+.scroll_sludzy{
+    overflow: auto;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 40px;
+}
+.scroll_sludzy .profil_img{
+    height: 100px;
+    margin-right: 20px;
+}
+.scroll_sludzy .coins{
+    height: 20px;
+}
+.scroll_sludzy > div{
+    width: 400px;
+}
+#sluga{
+    font-size: 16px;
+    width: 370px;
+}

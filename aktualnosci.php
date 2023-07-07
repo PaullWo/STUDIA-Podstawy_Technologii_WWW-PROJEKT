@@ -71,9 +71,9 @@
                             }
                             ?>
                             •Koniecznie zajrzyj w zakładke: <b class="wyrozniony_tekst">GANGI</b>, aby poznać wszystkie koty w okolicy.<br>
-                            •W zakładce <b class="wyrozniony_tekst">SPOŁECZNOŚĆ</b> zobaczysz posty tylko naszych przyjaciół z gangu.<br>
-                            •Na start dostajesz 2000 CatCoins, jednak nie przejmuj się w każdej chwili <br>możesz je zarobić w zakładce <b class="wyrozniony_tekst">POLOWANIE</b>.<br>
-                            •W zakładce <b class="wyrozniony_tekst">HANDEL</b> możesz kupić/sprzedać swojego sługę.<br>
+                            •W zakładce <b class="wyrozniony_tekst">SPOŁECZNOŚĆ</b> zobaczysz posty naszych przyjaciół.<br>
+                            •Na start dostajesz 2000 CatCoins, jednak nie przejmuj się w każdej chwili możesz je zarobić w zakładce <b class="wyrozniony_tekst">POLOWANIE</b>.<br>
+                            •W zakładce <b class="wyrozniony_tekst">HANDEL</b> możesz kupić swojego sługę.<br>
                             Miłej zabawy!
                         </p>
                         </div>

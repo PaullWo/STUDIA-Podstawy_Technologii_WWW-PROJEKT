@@ -68,6 +68,7 @@
                 $row=$result1->fetch_object();
                 $_SESSION["login"]=$login;
                 $_SESSION["gang"]=$row->gang;
+                $_SESSION['id']=$row->id;
                 header("Location: aktualnosci.php");
             }else{
                 ?>

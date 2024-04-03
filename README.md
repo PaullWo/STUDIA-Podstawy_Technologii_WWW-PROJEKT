@@ -1,7 +1,10 @@
 _________________
 **Strona dla miłośników kotów, w stylu pixelowej gry.**
-Projekt wykonywałam lokalnie korzystając z XAMPPa oraz bazy danych `cats_gang` ([](./cats_gang.sql)).
+
+Projekt wykonywałam lokalnie korzystając z XAMPPa oraz bazy danych `cats_gang`, której export zawarty jest w repozytorium.
+
 Grafika wykonywana jest przezemnie za pomocą `pixilart`.
+
 Wykorzystane technologie: `HTML`,`CSS`,`PHP`,`JavaScript`.
 
 Użytkownicy mają możliwość:

@@ -64,8 +64,7 @@ CREATE TABLE `posty` (
 
 INSERT INTO `posty` (`id`, `idUzytkownika`, `tresc`, `obrazek`, `data`) VALUES
 (1, 46, 'Świetny dzień, zarobiłem dziś 5200 CatCoins!', '', '2023-07-06 19:46:55'),
-(2, 44, 'Kolejny ciężki dzień w pracy.', 'maciek.png', '2023-07-05 19:47:13'),
-(25, 49, 'ggv', '25.png', '2023-07-07 02:29:29');
+(2, 44, 'Kolejny ciężki dzień w pracy.', 'maciek.png', '2023-07-05 19:47:13');
 
 -- --------------------------------------------------------
 
